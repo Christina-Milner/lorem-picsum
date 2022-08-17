@@ -1,0 +1,89 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#picBox {
+  margin: 0 auto;
+  padding-top: 2%;
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+
+h1 {
+  text-align: center;
+  margin: 1% 0;
+}
+
+.formBox {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  gap: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.formBox div {
+  margin: 5px;
+}
+
+div input {
+  margin: 0 5px;
+}
+
+.iHateCSS {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.fixThis input ~ label {
+  margin-right: 20px;
+}
+
+.fixThis input ~ label ~ label {
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 2%;
+  padding: 1%;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

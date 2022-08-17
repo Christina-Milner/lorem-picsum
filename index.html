@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Stylish images</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>Find stylish placeholder images!</h1>
+		<section class ="formBox">
+			<div class="iHateCSS">
+				<div><label for ="height">Height in pixels:</label><input type="number" name="height" id="height" value=""></div>
+				<div><label for ="width">Width (leave blank for square):</label><input type="number" name="width" id="width" value=""></div>
+			</div>
+			<div class="fixThis">
+				<input type="checkbox" id="greyscale" name="greyscale"><label for="greyscale">Greyscale</label>
+				<label for="blur">Blur</label><input type="range" id="blur" name="blur" min="0" max="10" value="0">
+			</div>
+				<button type="button" name="button">Get images</button>
+				<h2>Click an image to open the original photo in a new tab</h2>
+		</section>
+		<section id="picBox">
+			<a target="_blank" href=""><img id="pic1" src=""></a>
+			<a target="_blank" href=""><img id="pic2" src=""></a>
+			<a target="_blank" href=""><img id="pic3" src=""></a>
+			<a target="_blank" href=""><img id="pic4" src=""></a>
+			<a target="_blank" href=""><img id="pic5" src=""></a>
+			<a target="_blank" href=""><img id="pic6" src=""></a>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
